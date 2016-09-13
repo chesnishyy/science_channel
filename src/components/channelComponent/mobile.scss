@@ -1,3 +1,104 @@
 & {
+  header {
+    .header-wrapper{
+      display: flex;
+      justify-content: space-between;
+      height: px(109);
+      background: #f96331;
+      .icon-menu {
+        height: px(29);
+        width: px(36);
+        margin-top: px(56);
+        margin-left: px(23);
+      }
+      .logo {
+        height: px(37);
+        width: px(37);
+        margin-top: px(56);
+      }
+      .settings {
+        width: px(43);
+        height: px(37);
+        margin-top: px(53);
+        margin-right: px(25);
+      }
+    }
+  }
+  .following {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: bold;
+    height: px(342);
+    background: url("../images/channelComponent/image.png"), #000;
+    .span1 {
+      margin-top: px(69);
+      color: #fff;
+      font-size: px(34);
+    }
+    button {
+      width: px(171);
+      height: px(60);
+      margin-top: px(50);
+      color: #f96332;
+      font-size: px(18);
+      border-radius: px(30);
+      background: #fff;
+    }
+    .span2 {
+      margin-top: px(47);
+      color: #fff;
+      font-size: px(18);
+    }
+  }
 
+
+  .news {
+    font-family: Montserrat;
+    article {
+
+      p {
+        margin-top: px(43);
+        margin-left: px(34);
+        margin-right: px(34);
+        font-size: px(31);
+        font-weight: bold;
+        line-height: px(40);
+      }
+      div {
+        display:flex;
+        margin-top: px(40);
+
+        span {
+          display: flex;
+          margin-left: px(34);
+          line-height: px(54);
+          margin-right: px(36);
+          font-size: px(17);
+        }
+        :first-child {
+          &::before {
+            content: "";
+            display: block;
+            width: px(38);
+            height: px(54);
+            margin-right: px(15);
+            background: url("../images/channelComponent/iconsource.png") no-repeat;
+          }
+        }
+        :last-child {
+          &::before {
+            content: "";
+            display: block;
+            width: px(52);
+            height: px(52);
+            margin-right: px(15);
+            background: url("../images/channelComponent/icontime.png") no-repeat;
+          }
+        }
+
+      }
+    }
+  }
 }
